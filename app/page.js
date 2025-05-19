@@ -1,6 +1,15 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import {Roboto} from "next/font/google"
+
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  display:"swap",
+  weight:"700"
+})
+
 function Home() {
   const router = useRouter();
 
@@ -12,7 +21,7 @@ function Home() {
   return (
     <section className="container mx-auto py-2">
       <div className="space-x-2">
-        <h1>useRouter Method</h1>
+        <h1 className={roboto.className}>useRouter Method</h1>
 
         {/* <button 
 onClick={() => router.push("about")}
