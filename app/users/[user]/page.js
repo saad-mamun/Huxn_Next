@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 
 const User = ({params}) =>{
     console.log(params);
